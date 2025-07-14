@@ -91,7 +91,7 @@ stock_df = detect_buying_climax(stock_df)
 
 
 
-'''Vis
+'''Visualizing features from above'''
 # Ensure datetime is parsed and set as index
 stock_df['datetime'] = pd.to_datetime(stock_df['window_start'])
 stock_df.set_index('datetime', inplace=True)
